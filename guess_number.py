@@ -11,25 +11,21 @@ def ask_number():
     return tal
 
 
-ask_number()
-
-
 def mainloop(guesses):
     n = random.randint(1, 100)
     while True:
 
-        text = input("Vad är din gissning?")
-        tal = int(text)
+        as_number = ask_number()
 
-        if tal == n:
+        if as_number == n:
             print("Snyggt! Det tog dig " + str(guesses) + " gissningar!")
             break
 
-        if tal < n:
+        if as_number < n:
             print("Fel, mitt nummer är högre... Försök igen!")
             guesses = guesses + 1
 
-        if tal > n:
+        if as_number > n:
             print("Fel, mitt nummer är lägre... Försök igen!")
             guesses = guesses + 1
 
