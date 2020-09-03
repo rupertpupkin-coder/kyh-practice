@@ -20,5 +20,6 @@ def run():
         result = divide(a, b)
     print(f"{result}")
 
+
 if __name__ == '__main__':
     run()
