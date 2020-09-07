@@ -5,6 +5,7 @@ def is_it_too_long(name):
 
 def main():
     students = ["anna", "beatrice", "cecilia", "doris", "esmeralda", "frida", "gunilla"]
+    students = input("Ange studenternas namn med komma emellan: ").split()
     for name in students:
         if is_it_too_long(name):
             print(f"{name} är för långt!")
