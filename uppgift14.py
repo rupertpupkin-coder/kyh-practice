@@ -2,7 +2,9 @@ FRUITS = ['banana', 'apple', 'orange']
 CARS = ['volvo', 'ford', 'tesla']
 
 
+
 def run():
+
     basket = ['volvo', 'is', 'an', 'orange', 'apple']
     cars = []
     fruits = []
@@ -10,13 +12,18 @@ def run():
     for item in basket:
         if item in CARS:
             cars.append(item)
+
         elif item in FRUITS:
             fruits.append(item)
+
         else:
             rest.append(item)
-    write_things(cars, 'Cars')
-    write_things(fruits, 'Fruits')
-    write_things(rest, 'Misc')
+
+    write_things(sorted(cars), 'Cars')
+    write_things(sorted(fruits), 'Fruits')
+    write_things(sorted(rest), 'Misc')
+
+
 
 
 def write_things(items, kind):
