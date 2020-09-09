@@ -12,6 +12,7 @@ homepage = """
 print(homepage)
 
 todo_list = []
+todo_list.append(p.read_text())
 
 
 def user_input():
@@ -20,21 +21,23 @@ def user_input():
         if user_answer == "1":
             print(p.read_text())
 
-        elif user_answer == "2":
-            print(p.read_text())
+
+        if user_answer == "2":
+
+            p.read_text()
             user_input2 = input("Vad vill du lägga till? ")
             todo_list.append(user_input2)
-            p.write_text(user_input2)
+            p.write_text(f"{todo_list}")
 
-        elif user_answer == "3":
+
+        if user_answer == "3":
             print(p.read_text())
             user_input3 = input("Vad vill du ta bort? ")
-        elif user_answer == "4":
+
+        if user_answer == "4":
             quit()
 
 
-
-
-
+        user_input()
 
 user_input()
