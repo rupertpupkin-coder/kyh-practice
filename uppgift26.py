@@ -26,7 +26,7 @@ Längd: {length}"""
 
     print(description)
 
-    main()
+main()
 
 
 
