@@ -10,9 +10,7 @@ def main():
     print("Innehåll:                          100g")
     for elem in data:
         if elem['rightalign']:
-
             print(f"{elem['what']:>20} {elem['value']:17}{elem['unit']}")
-
         elif not elem['rightalign']:
             print(f"{elem['what']:20} {elem['value']:17}{elem['unit']}")
 

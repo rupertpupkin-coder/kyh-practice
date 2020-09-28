@@ -36,4 +36,4 @@ if __name__ == '__main__':
             print("Inte ett heltal, väljer högsta talet")
             max_value = 10
 
-    game(number, max_value)
+    game(numbers, max_value)
