@@ -26,21 +26,19 @@ def text(text):
     return count
 
 
-name = input("Skriv något:")
-a = text(name)
-print(a)
+#name = input("Skriv något:")
+#a = text(name)
+#print(a)
 
 
 # 40.3
 
 def minmax(value, min, max):
-    if value < min:
-        return False
-    if value > max:
-        return False
-    else:
+    if min < value < max:
         return True
+    else:
+        return False
 
 
-a = minmax(60, 10, 56)
+a = minmax(44, 10, 56)
 print(a)
