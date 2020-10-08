@@ -6,15 +6,34 @@ def test_reverse_text():
     got = "".join(uppgift40.reverse("Teststring"))
     assert expected == got
 
+
 def test_reverse_text_wrong():
     expected = "Tststring"[::-1]
     got = "".join(uppgift40.reverse("Teststring"))
     assert expected != got
 
 
+def test_reverse_text_2():
+    expected = "Teststr ing123"[::-1]
+    got = "".join(uppgift40.reverse("Teststring123"))
+    assert expected != got
+
+
 def test_count_upper_letters():
     expected = 0
     got = uppgift40.text("asdaasd")
+    assert expected == got
+
+
+def test_count_upper_letters_2():
+    expected = 10
+    got = uppgift40.text("ASDASDASDA")
+    assert expected == got
+
+
+def test_count_upper_letters_3():
+    expected = 0
+    got = uppgift40.text("")
     assert expected == got
 
 

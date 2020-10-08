@@ -1,3 +1,5 @@
 pygame
 requests
 pytest
+simple-colors
+
