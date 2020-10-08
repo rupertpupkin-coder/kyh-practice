@@ -1,0 +1,16 @@
+# 1. Användaren kommer till en meny där den får 4 olika val.
+
+# 2. Alt 1, Gör att användaren får se sin TODO lista.
+#    Alt 2, Ger användaren möjlighet att lägga till uppgifter i TODOlistan
+#    Alt 3, Ger användaren möjlighet att ta bort uppgifter.
+#    Alt 4, Ger användaren möjlighet att avbryta programmet
+
+# 3. Kunna lägga till saker i todo listan
+#
+#
+#
+#
+#
+#
+#
+#
