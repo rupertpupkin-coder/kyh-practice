@@ -34,7 +34,6 @@ def multiply(a):
         result *= i
     return result
 
-
 f = multiply([1, 2, 3])
 print(f)
 
